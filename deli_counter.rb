@@ -1,9 +1,15 @@
 # Write your code here.
-
-def line(names_array)
+    katz_deli = []
+    
+def line(line_array)
   if names_array.empty?
     puts "The line is currently empty."
   else
-    names_array.each_with_index do |e, i| puts "Hello #{e}. #{i} is your place in line" end
+    names_array.each_with_index do |e, i|  end
   end
+end
+
+def take_a_number(line_array, name)
+  puts "Welcome,  #{name}. You are number #{line_array.length} in line."
+  line_array << name
 end
