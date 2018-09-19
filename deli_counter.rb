@@ -2,10 +2,10 @@
     katz_deli = []
 
 def line(line_array)
-  if names_array.empty?
+  if line_array.empty?
     puts "The line is currently empty."
   else
-    names_array.each_with_index do |e, i| puts "Hello,  #{e}. You are number #{i+1} in line." end
+    line_array.each_with_index do |e, i| puts "Hello,  #{e}. You are number #{i+1} in line." end
   end
 end
 
@@ -14,4 +14,10 @@ def take_a_number(line_array, name)
   line_array << name
 end
 
-def now_serving
+def now_serving(line_array)
+  if line_array.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line_array.shift}."
+  end
+end
