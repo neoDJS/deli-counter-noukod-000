@@ -13,7 +13,7 @@ end
 
 def take_a_number(line_array, name)
   line_array << name
-  puts "Welcome,  #{name}. You are number #{line_array.length} in line."
+  puts "Welcome, #{name}. You are number #{line_array.length} in line."
 end
 
 def now_serving(line_array)
